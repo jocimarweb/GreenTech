@@ -138,10 +138,40 @@ input[type="text"] {
   padding: 13px;
 }
 
+/* Conteúdo da Página - Fundo da Página */
 .page-content {
   background: var(--branco);
 }
 
 /* Body - Page */
 
-/* Aula 4 - Tempo decorrido 47:50min */
+/* Swiper - BODY */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img-fluid {
+  max-width: 100%;
+}
+
+.block {
+  margin-left: 2%;
+  margin-right: 2%;
+}
