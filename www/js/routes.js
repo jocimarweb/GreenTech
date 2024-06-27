@@ -60,14 +60,10 @@ var app = new Framework7({
           });
 
           // categorias - Body
-          var swiper2 = new Swiper2(".categorias", {
+          var swiper2 = new Swiper(".categorias", {
             slidesPerView: 3,
-            spaceBetween: 30,
+            spaceBetween: 10,
             freeMode: true,
-            pagination: {
-              el: ".swiper-pagination",
-              clickable: true,
-            },
           });
         },
         pageBeforeRemove: function (event, page) {
