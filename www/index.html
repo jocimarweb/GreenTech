@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- Color theme for statusbar (Android only) -->
+    <meta name="theme-color" content="#2196f3" />
+    <!-- Your app title -->
+    <title>INDEX</title>
+    <!-- Path to Framework7 Library Bundle CSS -->
+    <link rel="stylesheet" href="lib/framework7-bundle.min.css" />
+    <!-- CSS PERSONALIZADO -->
+    <link rel="stylesheet" href="css/index.css" />
+    <!-- CSS DETALHES -->
+    <link rel="stylesheet" href="css/detalhes.css" />
+    <!-- CSS CARRINHO -->
+    <link rel="stylesheet" href="css/carrinho.css" />
+    <!--Ícones Material Design-->
+    <link rel="stylesheet" href="css/materialdesignicons.min.css" />
+    <!-- CSS REMIXICON -->
+    <link rel="stylesheet" href="css/remixicon/remixicon.css" />
+  </head>
+
+  <body>
+    <!-- App root element -->
+    <div id="app">
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main">
+        <!-- TAB BAR-->
+        <div id="menuPrincipal" class="toolbar toolbar-bottom">
+          <div class="toolbar-inner display-flex">
+            <a href="/index/" class="tab-link link active">
+              <i class="ri-home-4-line"></i>
+              <span>Home</span>
+            </a>
+            <a href="/link2/" class="tab-link link">
+              <i class="ri-search-2-line"></i>
+              <span>Busca</span>
+            </a>
+            <a href="/link3/" class="tab-link link">
+              <i class="ri-heart-3-line"></i>
+              <span>Favoritos</span>
+            </a>
+            <a href="/link4/" class="tab-link link">
+              <i class="ri-user-line"></i>
+              <span>Usuários</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Initial Page, "data-name" contains page name -->
+        <div data-name="index" class="page color-theme-blue">
+          <!-- Navbar - TOP -->
+          <div class="top-nav">
+            <h1 class="title-logo"><span>Green</span>Tech</h1>
+            <a href="#" class="btn-cart" data-count="3">
+              <i class="ri-shopping-bag-line"></i>
+            </a>
+          </div>
+
+          <form>
+            <input placeholder="O que você procura?" type="text" />
+            <i class="icone-busca ri-search-2-line"></i>
+          </form>
+
+          <!-- Scrollable page content -->
+          <div class="page-content">
+            <div class="block no-margin-top">
+              <!-- Swiper -->
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      class="img-fluid"
+                      src="img/propaganda.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="img-fluid"
+                      src="img/propaganda2.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="img-fluid"
+                      src="img/propaganda3.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="img-fluid"
+                      src="img/propaganda4.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <!-- # Swiper -->
+
+              <!-- Título - Categorias -->
+              <div
+                class="display-flex align-items-center justify-content-space-between"
+              >
+                <h2>Categorias</h2>
+                <a href="#">
+                  Veja todas
+                  <i class="mdi mdi-arrow-right"></i>
+                </a>
+              </div>
+              <!-- # - Título - Categorias -->
+
+              <!-- Swiper - Categoria -->
+              <div class="swiper categorias">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <button class="filter-btn active">Todas</button>
+                  </div>
+                  <div class="swiper-slide">
+                    <button class="filter-btn active">
+                      Celulares
+                    </button>
+                  </div>
+                  <div class="swiper-slide">
+                    <button class="filter-btn active">Laptops</button>
+                  </div>
+                  <div class="swiper-slide">
+                    <button class="filter-btn active">
+                      Computatores
+                    </button>
+                  </div>
+                  <div class="swiper-slide">
+                    <button class="filter-btn active">
+                      Smartwatches
+                    </button>
+                  </div>
+                  <div class="swiper-slide">
+                    <button class="filter-btn active">Tablets</button>
+                  </div>
+                  <div class="swiper-slide">
+                    <button class="filter-btn active">Câmeras</button>
+                  </div>
+                  <div class="swiper-slide">
+                    <button class="filter-btn active">
+                      Fones de Ouvido
+                    </button>
+                  </div>
+                  <div class="swiper-slide">
+                    <button class="filter-btn active">
+                      Impressoras
+                    </button>
+                  </div>
+                  <div class="swiper-slide">
+                    <button class="filter-btn active">
+                      Scanners
+                    </button>
+                  </div>
+                  <div class="swiper-slide">
+                    <button class="filter-btn active">
+                      Monitores
+                    </button>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <!-- # - Swiper - Categoria -->
+
+                <!-- Produtos -->
+                <div
+                  id="produtos"
+                  class="margin-top row display-flex align-items-center justify-content-start"
+                >
+                  <!-- Itens Card 1 -->
+                  <div class="item-card">
+                    <a href="/detalhes/" class="item">
+                      <div class="img-container">
+                        <img src="img/airpod.png" alt="Airpod" />
+                      </div>
+                      <div class="nome-rating">
+                        <span class="color-gray">AirPod</span>
+                        <span class="margin-right bold">
+                          <i class="mdi mdi-star"></i>
+                          3.6
+                        </span>
+                      </div>
+                      <div class="price">R$ 299,00</div>
+                    </a>
+                  </div>
+                  <!-- # - Item Card 1 -->
+                  <!-- Item Card 2 -->
+                  <div class="item-card">
+                    <a href="#" class="item">
+                      <div class="img-container">
+                        <img src="img/xbox.png" alt="XBox" />
+                      </div>
+                      <div class="nome-rating">
+                        <span class="color-gray">XBox - Série X</span>
+                        <span class="margin-right bold">
+                          <i class="mdi mdi-star"></i>
+                          4.9
+                        </span>
+                      </div>
+                      <div class="price">R$ 2.300,00</div>
+                    </a>
+                  </div>
+                  <!-- # - Item Card 2 -->
+                  <!-- Item Card 3 -->
+                  <div class="item-card">
+                    <a href="#" class="item">
+                      <div class="img-container">
+                        <img src="img/macbook.png" alt="XBox" />
+                      </div>
+                      <div class="nome-rating">
+                        <span class="color-gray">XBox - Série X</span>
+                        <span class="margin-right bold">
+                          <i class="mdi mdi-star"></i>
+                          4.9
+                        </span>
+                      </div>
+                      <div class="price">R$ 2.300,00</div>
+                    </a>
+                  </div>
+                  <!-- # - Item Card 3 -->
+                  <!-- Item Card 4 -->
+                  <div class="item-card">
+                    <a href="#" class="item">
+                      <div class="img-container">
+                        <img src="img/iphone.png" alt="XBox" />
+                      </div>
+                      <div class="nome-rating">
+                        <span class="color-gray">XBox - Série X</span>
+                        <span class="margin-right bold">
+                          <i class="mdi mdi-star"></i>
+                          4.9
+                        </span>
+                      </div>
+                      <div class="price">R$ 2.300,00</div>
+                    </a>
+                  </div>
+                  <!-- # - Item Card 4 -->
+                </div>
+                <br /><br /><br /><br /><br /><br /><br /><br />
+                <!-- # - Produtos - Card -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- # - Your main view, should have "view-main" class -->
+    </div>
+    <!-- # - App root element -->
+
+    <!-- Path to Framework7 Library Bundle JS-->
+    <script
+      type="text/javascript"
+      src="lib/framework7-bundle.min.js"
+    ></script>
+    <!-- jQuery -->
+    <script
+      type="text/javascript"
+      src="lib/jquery-3.7.0.min.js"
+    ></script>
+    <!-- Roteamento do app-->
+    <script type="text/javascript" src="js/routes.js"></script>
+    <!-- Apache - Cordova -->
+    <script src="cordova.js"></script>
+    <!-- Swiper JS -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+  </body>
+</html>
