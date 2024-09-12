@@ -31,90 +31,53 @@
     <div id="app">
       <!-- Your main view, should have "view-main" class -->
       <div class="view view-main">
-        <!-- TAB-BAR-OLD -->
         <!-- # Your main view, should have "view-main" class -->
 
         <!-- Initial Page, "data-name" contains page name -->
         <div data-name="carrinho" class="page color-theme-blue">
+          <div class="nav-top cart">
+            <a href="/index/">
+              <i class="ri-arrow-left-s-line"></i>
+            </a>
+            <strong>
+              <i class="ri-shopping-cart-2-line"></i> Carrinho
+            </strong>
+            <a href="#">
+              <i class="ri-more-fill"></i>
+            </a>
+          </div>
           <!-- Scrollable page content -->
           <div class="page-content">
-            <div class="prod-detail">
-              <div class="buttons-top">
-                <a href="/index/"
-                  ><i class="ri-arrow-left-s-line"></i
-                ></a>
-                <a href="#"><i class="ri-heart-3-line"></i></a>
-                <a href="#"><i class="ri-share-2-line"></i></a>
-              </div>
-              <img src="img/airpod.png" alt="default.png" />
-            </div>
-            <div class="prod-content">
-              <div class="block">
-                <div class="line">
-                  <b>Nome do Produto</b>
-                  <button class="promo-btn">Promoção</button>
+            <div id="listaCarrinho">
+              <h1>Aula 6 tempo: 27:33</h1>
+              <!-- ITEM DO CARRINHO -->
+              <div class="item-carrinho">
+                <div class="area-img">
+                  <img src="img/default.png" alt="" />
                 </div>
-                <div
-                  class="display-flex align-items-center justify-content"
-                >
-                  <button class="btn-rates">
-                    <i class="mdi mdi-star"></i> 4.8
-                  </button>
-                  <button class="btn-rates">
-                    <i class="ri-thumb-up-fill"></i> 90%
-                  </button>
-                  <span class="color-gray">110 reviews</span>
-                </div>
-                <div
-                  class="display-flex align-items-center justify-content"
-                >
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit. At soluta obcaecati dolor, quaerat
-                    dignissimos modi dolorum. Qui consectetur labore
-                    nam. Voluptatem voluptates assumenda incidunt?
-                    Provident sit numquam error aut vitae.
-                  </p>
-                </div>
-
-                <table>
-                  <tr>
-                    <th>Características</th>
-                    <th>Detalhes</th>
-                  </tr>
-                  <tr>
-                    <td>Bonito</td>
-                    <td>Aqui vai o detalhe mais detalhado!</td>
-                  </tr>
-                  <tr>
-                    <td>Muito Bonito</td>
-                    <td>Aqui vai mais um detalhe mais detalhado!</td>
-                  </tr>
-                </table>
-              </div>
-              <!-- TAB BAR-->
-              <div class="toolbar toolbar-bottom">
-                <div
-                  class="toolbar-inner display-flex align-items-center justify-content-center"
-                >
-                  <div class="flex-40 text-align-center">
-                    <span class="riscado color-gray"
-                      >R$ 1.400,00</span
-                    >
-                    <h3 class="princing no-padding no-margin">
-                      R$ 1.200,00
-                    </h3>
+                <div class="area-details">
+                  <div class="sup">
+                    <span class="name-prod">Xbox Series X</span>
+                    <a class="s" href="#">
+                      <i class="mdi mdi-close"></i>
+                    </a>
                   </div>
-                  <div class="flex-60">
-                    <button class="add-card">
-                      Adicionar ao Carrinho
-                    </button>
+                  <div class="middle">
+                    <span>1 TB</span>
+                  </div>
+                  <div class="preco-quantidade">
+                    <span>R$ 99.500</span>
+                    <div class="count">
+                      <a class="minus" href="#">-</a>
+                      <input class="qtd-item" type="text" value="1" />
+                      <a class="plus" href="#">+</a>
+                    </div>
                   </div>
                 </div>
               </div>
-              <!-- # - TAB BAR-->
             </div>
           </div>
+          <!-- # Scrollable page content -->
         </div>
         <!-- # - Scrollable page content -->
       </div>

@@ -32,7 +32,7 @@ var app = new Framework7({
         },
         pageInit: function (event, page) {
           // fazer algo quando a página for inicializada
-          // app.views.main.router.navigate("/detalhes/");
+          // app.views.main.router.navigate("/carrinho/");
 
           $.getScript("js/index.js");
 
@@ -196,7 +196,7 @@ var app = new Framework7({
   // ... other parameters
 });
 
-//Para testes direto no navegador
+//Para testes direto no navegador ou para compilar para o celular (comente esta linha)
 var mainView = app.views.create(".view-main", { url: "/index/" });
 
 //EVENTO PARA SABER O ITEM DO MENU ATUAL
